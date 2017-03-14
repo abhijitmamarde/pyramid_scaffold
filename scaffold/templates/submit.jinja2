@@ -1,0 +1,11 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1><span class="font-semi-bold">Hello</span> <span class="smaller">{{ name }}</span></h1>
+</div>
+
+<p>
+Thanks for subscribing {{ name }}. We will notify you on <b>"{{ email }}"</b> when we are live!
+</p>
+{% endblock content %}

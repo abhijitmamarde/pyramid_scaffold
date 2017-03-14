@@ -1,0 +1,31 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1><span class="font-semi-bold">Hello</span> <span class="smaller">{{ name }}</span></h1>
+
+  <p>Lists of contacts added:</p>
+
+  <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    {% for rec in records: %}
+    <tr>
+      <td> {{ rec['name'] }} </td>
+      <td> {{ rec['email'] }} </td>
+    </tr>
+    {% endfor %}
+
+  </tbody>
+  </table>
+
+</div>
+
+
+{% endblock content %}
